@@ -1,0 +1,26 @@
+{
+  "name": "atividade-sass",
+  "version": "1.0.0",
+  "description": "Atividade do módulo Css inteligente com Sass",
+  "main": "/source/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suelenbraga2006/atividade-sass.git"
+  },
+  "keywords": [
+    "sass",
+    "atividade"
+  ],
+  "author": "Suelen Braga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suelenbraga2006/atividade-sass/issues"
+  },
+  "homepage": "https://github.com/suelenbraga2006/atividade-sass#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
