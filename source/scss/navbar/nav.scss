@@ -1,0 +1,15 @@
+nav{
+    @extend %nav-padrao;
+}
+
+nav ul{
+    @extend %nav-ul;
+}
+
+nav ul li{
+    @extend %nav-ul-li;
+}
+
+nav ul li a{
+    @extend %nav-ul-li-a;
+}
