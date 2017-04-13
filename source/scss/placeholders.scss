@@ -1,7 +1,7 @@
 %nav-padrao{
-    border: $nav-border;
+    border-width: $navbar-border-width;
+    border-style: $navbar-border-style;
     padding: 10px;
-    background: $navbar-background;
 }
 
 %nav-ul{
@@ -24,14 +24,8 @@
 }
 
 %nav-ul-li-a{
-    color: $navbar-a-color;
     text-decoration: none;
     padding: 5px;
-}
-
-%nav-ul-li-a-hover{
-    color: $navbar-a-hover-color;
-    background-color: $navbar-a-hover-background;
 }
 
 %brand{

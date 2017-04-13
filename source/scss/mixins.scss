@@ -1,15 +1,13 @@
-@mixin tema-nav($cor-borda, $cor-fonte, $cor-fundo, $cor-fonte-hover, $cor-fundo-hover){
-    $navbar-border-color: $cor-borda;
-    $navbar-a-color: $cor-fonte;
-    $navbar-background: $cor-fundo;
-    $navbar-a-hover-color: $cor-fonte-hover;
-    $navbar-a-hover-background: $cor-fundo-hover;
+@mixin nav($cor-borda, $cor-fundo){
+    border-color: $cor-borda;
+    background-color: $cor-fundo;
 }
 
-@if tema == 1{
-        @include tema-nav(#822d69, #822d69, #ffffff, #ffffff, #822d69);
-    }
+@mixin nav-cor-fonte($cor-fonte){
+    color: $cor-fonte;
+}
 
-    @if tema == 2{
-        @include tema-nav(#2c822a, #2c822a, #d4d225, #0000ff, #2c822a);
-    }
+@mixin nav-hover($cor-fonte-hover, $cor-fundo-hover){
+    color: $cor-fonte-hover;
+    background-color: $cor-fundo-hover;
+}
