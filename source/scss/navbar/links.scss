@@ -1,9 +1,47 @@
+nav{
+    @extend %nav-padrao;
+
+    @if $tema == 2 {
+        @include nav (#307b24, #dbc829);
+    }
+    @else if $tema == 3 {
+        @include nav (#26387c, #9f9696);
+    }
+    @else{
+        @include nav (#6c4476, #fff);
+    }
+}
+
+nav ul{
+    @extend %nav-ul;
+}
+
+nav ul li{
+    @extend %nav-ul-li;
+}
+
 nav ul li a{
     @extend %nav-ul-li-a;
+
+    @if $tema == 2 {
+        @include nav-cor-fonte (#307b24);
+    }
+    @else if $tema == 3 {
+        @include nav-cor-fonte (#26387c);
+    }
+    @else{
+        @include nav-cor-fonte (#6c4476);
+    }
 }
 
 nav ul li a:hover{
-    @if $tema ==2 {
-        @include nav-hover (#0ff, #000);
+    @if $tema == 2 {
+        @include nav-hover (#fff, #307b24);
+    }
+    @else if $tema == 3 {
+        @include nav-hover (#929dc6, #26387c);
+    }
+    @else{
+        @include nav-hover (#fff, #6c4476);
     }
 }
