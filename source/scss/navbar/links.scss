@@ -1,0 +1,7 @@
+nav ul li a{
+    @extend %nav-ul-li-a;
+}
+
+nav ul li a:hover{
+    @extend %nav-ul-li-a-hover;
+}

@@ -1,5 +1,5 @@
 %nav-padrao{
-    border: 1px solid $navbar-border-color;
+    border: $nav-border;
     padding: 10px;
     background: $navbar-background;
 }
@@ -14,21 +14,29 @@
 }
 
 %nav-ul-li{
-    font-family: "Arial";
-    font-size: 1em;
+    font-family: $nav-font-family;
+    font-size: $nav-font-size;
     list-style: none;
     font-weight: bold;
     -webkit-flex: 1;
     flex: 1;
+    text-transform: uppercase;
 }
 
 %nav-ul-li-a{
     color: $navbar-a-color;
     text-decoration: none;
+    padding: 5px;
+}
+
+%nav-ul-li-a-hover{
+    color: $navbar-a-hover-color;
+    background-color: $navbar-a-hover-background;
 }
 
 %brand{
-    font-size: 1.5em;
+    text-transform: none;
+    font-size: $brand-font-size;
     -webkit-flex: 10;
     flex: 10;
 }
